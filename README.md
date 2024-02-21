@@ -1,3 +1,5 @@
+![Logo](https://github.com/bradleeharr/WifiLocalization/assets/56418392/8cb5f33a-9a25-401a-9928-c0c1f65e7816)
+
 # Wifi-RSSI-Localization
  ESP32 using WiFi received signal strength indicator, estimating path loss and calculating distance.
 
