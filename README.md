@@ -34,7 +34,7 @@ From then, the estimated distance will be continuously calculated and relayed ov
 
 # Example Calibration Curve
 
-<p align="center"><img src="https://github.com/bradleeharr/Wifi-RSSI-Localization/assets/56418392/1f3f3bc3-36aa-49be-9e50-a50c54f34a5f"> </p>
+<p align="center"><img src="https://github.com/bradleeharr/Wifi-RSSI-Localization/assets/56418392/1f3f3bc3-36aa-49be-9e50-a50c54f34a5f" style="width:400px"> </p>
 This is an example curve of the distribution of distances against the RSSI generated from walking continuously in an outdoor field. The path loss exponent, 2.28, is close to 2, meaning that it is close to the ideal path loss exponent of 2 (falling off as a function of the distance as 1/d^2)
 
 
