@@ -1,8 +1,10 @@
-![Logo](https://github.com/bradleeharr/WifiLocalization/assets/56418392/8cb5f33a-9a25-401a-9928-c0c1f65e7816)
+
 
 # Wifi-RSSI-Localization
  ESP32 using WiFi received signal strength indicator, estimating path loss and calculating distance.
-
+<p align="center">
+ <img src="https://github.com/bradleeharr/WifiLocalization/assets/56418392/8cb5f33a-9a25-401a-9928-c0c1f65e7816" style="height:200px;">
+</p>
 
 ## Theory
 The received signal strength indicator (RSSI) is a common metric used in wireless communications to establish the reliability of a communication signal. RSSI is simply the ratio of the transmitted power to the received power and is typically displayed in a logarithmic scale of decibels (dB). 
