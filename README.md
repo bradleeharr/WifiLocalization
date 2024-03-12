@@ -15,7 +15,7 @@ In a perfect vaccuum with a direct line of sight, the power received from a radi
 Although the environment in any given location is not a perfect vacuum, similar principles apply toward understanding the distance based on a given environment.
 
 ### Log-distance path loss model
-The log-distance path loss model is an extension of the 1/d^2 model, allowing for other values of 𝛾 and other reference distances d_0.
+The log-distance path loss model is an extension of the 1/d^2 model, allowing for other values of 𝛾 (in free-space 𝛾 = 2, because of 1/d^2) and other reference distances d_0.
 Received signal strength is:
 
 𝑅𝑆𝑆𝐼(𝑑)= 𝑅𝑆𝑆𝐼_𝑑0  − 10𝛾 log_10⁡(𝑑/𝑑_0 )
