@@ -4,7 +4,14 @@
  ESP32 using WiFi received signal strength indicator, estimating path loss and calculating distance.
 
 ## Theory
-The received signal strength indicator (RSSI) is a common metric used in wireless communications to establish the reliability of a communication signal. RSSI is simply the ratio of the transmitted power to the received power and is typically displayed in a logarithmic scale of decibels (dB). 
+The received signal strength indicator (RSSI) is a common metric used in wireless communications to establish the reliability of a communication signal. 
+
+The RSSI is important because it tells you how strong the signal is. If you have a stronger signal, you will be able to send and receive data faster and more reliably. 
+
+
+
+
+RSSI is simply the ratio of the transmitted power to the received power and is typically displayed in a logarithmic scale of decibels (dB). 
 In a perfect vaccuum with a direct line of sight, the power received from a radio transmitter is decreased by a factor of 1/d^2, where d is the distance. Although the environment in any given location is not a perfect vacuum, similar principles apply toward understanding the distance based on a given environment.
 
 ### Log-distance path loss model
@@ -17,7 +24,36 @@ Received signal strength is:
 
 
 # Procedure
-Given RSSI values, this code creates a calibration curve to estimate distances in an environment.
+With the ESP32 Arduino libraries, it's easy to get the RSSI from the WiFi module, like so:
+```cpp
+#include <WiFi.h>
+
+const char *ssid = "Galaxy A13"; // Include the ssid for your WiFi network
+const char *password = "";       // Include the password for your WiFi network
+
+void initWiFi()
+{
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting to WiFi ..");
+  Serial.print(ssid);
+  
+  int timeout_counter = 0;
+  while(WiFi.status() != WL_CONNECTED){
+        Serial.print(".");
+        delay(200);
+        timeout_counter++;
+        if(timeout_counter >= CONNECTION_TIMEOUT*5){
+        ESP.restart();
+        }
+    }
+  Serial.println(WiFi.localIP());
+}
+WiFi.RSSI();
+```
+
+After measuring the RSSI values, this code creates a calibration curve to estimate distances in an environment.
+
 The first step is to take several RSSI measurements at known distances. This is indicated to the ESP32 with a serial commmand `D [distance]`
 
 After measuring distance values, the path loss exponent is estimated using a minimum mean-squared error fit at the distances sampled.
