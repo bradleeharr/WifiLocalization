@@ -10,8 +10,14 @@ The RSSI is important because it tells you how strong the signal is. If you have
 
 
 
+* RSSI is simply the ratio of the transmitted power to the received power and is typically displayed in a logarithmic scale of decibels relative to a miliWatt (dBm). 
+* Decibels convert to actual power quantities like so:
+    * <img src="https://github.com/user-attachments/assets/5e2f2d3d-223c-4f19-9b8b-18b023a00218" style="width: 400px;">
+    * <img src="https://github.com/user-attachments/assets/4ab82c45-f0ed-41b9-b0e0-70e26f698d8e" style="width: 400px;">
 
-RSSI is simply the ratio of the transmitted power to the received power and is typically displayed in a logarithmic scale of decibels (dB). 
+
+
+
 In a perfect vaccuum with a direct line of sight, the power received from a radio transmitter is decreased by a factor of 1/d^2, where d is the distance. 
 
 Although the environment in any given location is not a perfect vacuum, similar principles apply toward understanding the distance based on a given environment.
