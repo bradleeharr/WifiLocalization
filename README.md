@@ -70,7 +70,20 @@ After measuring distance values, the path loss exponent is estimated using a min
 From then, the estimated distance will be continuously calculated and relayed over the serial connection.
 
 
+# Usage
 
+1. Replace your WiFi credentials in the `ssid` and `password` credentials to those of a WiFi hotspot.
+
+2. Build the code using the Arduino editor and place it onto a device.
+
+    * This project was built for ESP 32. Instructions for loading code can be found [here](https://randomnerdtutorials.com/getting-started-with-esp32/)
+  
+4. In your editor on a laptop or device connect a serial connection (in Arduino IDE, PuTTY, etc.) to the ESP32
+
+5. Follow the instructions to make measurements
+
+   
+       
 # Example Calibration Curve
 
 <p align="center"><img src="https://github.com/bradleeharr/Wifi-RSSI-Localization/assets/56418392/1f3f3bc3-36aa-49be-9e50-a50c54f34a5f" style="width:400px"> </p>
