@@ -80,8 +80,11 @@ From then, the estimated distance will be continuously calculated and relayed ov
   
 4. In your editor on a laptop or device connect a serial connection (in Arduino IDE, PuTTY, etc.) to the ESP32
 
-5. Follow the instructions to make measurements
+5. If successfully connected to a WiFi hotpost, your serial should show "Setup Complete"
 
+6. Move the ESP32 some distance _away_ from your WiFi hotspot. Then, in the terminal, Enter 'd X', and it will use that measurememnt to calibrate at distance X feet 
+
+7. Try to get some varied measurements and clear measurements in different areas. After the fourth distance input, you will start receiving distance estimates baseed on your calibration.
    
        
 # Example Calibration Curve
