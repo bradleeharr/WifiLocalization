@@ -22,7 +22,7 @@ The RSSI is important because it tells you how strong the signal is. If you have
 * In a perfect vaccuum with a direct line of sight, the power received from a radio transmitter is decreased by a factor of 1/d^2, where d is the distance. 
 * Although the environment in any given location is not a perfect vacuum, similar principles apply toward understanding the distance based on a given environment. 
 
-* The relationship is generally referred to as wireless shadowing, or [fading](https://en.wikipedia.org/wiki/Fading) or fading, because the signal appears to fade when graphed.
+* The relationship is generally referred to as wireless shadowing, or [fading](https://en.wikipedia.org/wiki/Fading), because the signal appears to fade when graphed.
 
 ### Log-distance path loss model
 The [log-distance path loss model](https://en.wikipedia.org/wiki/Log-distance_path_loss_model) is an extension of the 1/d^2 scaling that happens in a perfect vacuum, allowing for other values of 𝛾 (in free-space 𝛾 = 2, because of 1/d^2) and other reference distances d_0.
