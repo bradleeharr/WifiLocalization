@@ -62,13 +62,13 @@ void initWiFi()
 WiFi.RSSI();
 ```
 
-After measuring the RSSI values, this code creates a calibration curve to estimate distances in an environment.
+* After measuring the RSSI values, the code in this repo creates a calibration curve to estimate distances in an environment.
 
-The first step is to take several RSSI measurements at known distances. This is indicated to the ESP32 with a serial commmand `D [distance]`
+* The first step is to take several RSSI measurements at known distances. This is indicated to the ESP32 with a serial commmand `D [distance]`
 
-After measuring distance values, the path loss exponent is estimated using a minimum mean-squared error fit at the distances sampled.
+* After measuring distance values, the path loss exponent is estimated using a minimum mean-squared error fit at the distances sampled.
 
-From then, the estimated distance will be continuously calculated and relayed over the serial connection.
+* From then, the estimated distance will be continuously calculated and relayed over the serial connection.
 
 
 # Usage
