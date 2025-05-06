@@ -1,6 +1,6 @@
 
 
-# Wifi-RSSI-Localization
+# Wifi RSSI Localization
 This is a short project using an ESP32 that pulls the WiFi received signal strength indicator. The measured WiFI signal power is capable of roughly estimating path loss and calculating distance.
 
 ## Theory
