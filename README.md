@@ -1,7 +1,7 @@
 
 
 # Wifi RSSI Localization
-This is a short project using an ESP32 that pulls the WiFi received signal strength indicator. The measured WiFI signal power is capable of roughly estimating path loss and calculating distance.
+This is a short project for WiFi location using an ESP32. Using the ESP32, the WiFi received signal strength indicator is pulled and used to estimate a rough distance based on previous measurements. The measured WiFI signal power is capable of roughly estimating path loss and calculating distance.
 
 ## Theory
 The received signal strength indicator (RSSI) is a common metric used in wireless communications to establish the reliability of a communication signal. 
